@@ -1,7 +1,40 @@
 h1 {
+  font-size: x-large;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  color: yellowgreen;
+  font-weight: 900;
+}
+a:link {
   color: yellowgreen;
 }
-h2 {
+a:hover {
+  color: royalblue;
+}
+a:visited {
   color: dimgray;
 }
+h3 {
+  color: dimgray;
+  padding-bottom: 50px;
+}
+h2 {
+  color: royalblue;
+  padding-bottom: 10px;
+  font-size: large;
+  font-weight: 600;
+}
+.different {
+  color: cornflowerblue;
+  padding-bottom: 5px;
+}
 /* I chose these colors to match the aestehtic of broomstick.com */
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+h4 {
+  padding-top: 10px;
+}
