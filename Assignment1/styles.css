@@ -17,11 +17,12 @@ a:visited {
 }
 h3 {
   color: dimgray;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 h2 {
   color: royalblue;
   padding-bottom: 10px;
+  padding-top: 35px;
   font-size: large;
   font-weight: 600;
 }
