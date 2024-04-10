@@ -1,34 +1,45 @@
 h1 {
-  font-size: x-large;
+  font-size: 01.7rem;
   text-transform: uppercase;
   padding-bottom: 10px;
   padding-top: 25px;
-  color: yellowgreen;
-  font-weight: 900;
+  color: royalblue;
+  font-weight: 800;
+  font-family: sans-serif;
+  text-align: center;
 }
 a:link {
-  color: yellowgreen;
+  color: royalblue;
+  text-shadow: 2px 2px 0 #505050, -2px 2px 0 #505050, -2px -2px 0 #505050,
+    2px -2px 0 #505050;
+  letter-spacing: 0.1pc;
 }
 a:hover {
-  color: royalblue;
+  color: yellowgreen;
 }
 a:visited {
   color: dimgray;
 }
 h3 {
-  color: dimgray;
+  color: darkslategray;
   padding-bottom: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 500;
 }
 h2 {
-  color: royalblue;
-  padding-bottom: 10px;
-  padding-top: 35px;
-  font-size: large;
-  font-weight: 600;
+  color: yellowgreen;
+  text-shadow: 1px 1px 0 #505050, -1px 1px 0 #505050, -1px -1px 0 #505050,
+    1px -1px 0 #505050;
+  padding-top: 30px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.1pc;
 }
 .different {
-  color: cornflowerblue;
+  color: royalblue;
   padding-bottom: 5px;
+  font-family: sans-serif;
 }
 /* I chose these colors to match the aestehtic of broomstick.com */
 
@@ -38,4 +49,12 @@ ul {
 }
 h4 {
   padding-top: 10px;
+}
+p {
+  line-height: 1.4;
+  padding: 10px;
+}
+body {
+  background-color: lightgrey;
+  color: darkslategray;
 }
