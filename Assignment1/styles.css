@@ -44,8 +44,14 @@ h2 {
 /* I chose these colors to match the aestehtic of broomstick.com */
 
 ul {
-  list-style-type: square;
-  list-style-position: inside;
+  list-style: none;
+
+  /* list-style-type: square;
+  list-style-position: inside; */
+}
+li {
+  padding-bottom: 10px;
+  margin-left: 30px;
 }
 h4 {
   padding-top: 10px;
