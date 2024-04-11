@@ -68,7 +68,14 @@ p {
   padding: 10px;
 }
 body {
-  background-color: gray;
+  background-color: lightgrey;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(141, 178, 113),
+    lightblue,
+    lightgrey,
+    rgb(163, 193, 139)
+  );
   color: beige;
   margin: 30px 100px 30px;
 }
