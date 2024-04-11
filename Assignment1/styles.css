@@ -7,6 +7,8 @@ h1 {
   font-weight: 800;
   font-family: sans-serif;
   text-align: center;
+  text-shadow: 1px 1px 0 #f0e0e0, -1px 1px 0 #f0e0e0, -1px -1px 0 #f0e0e0,
+    1px -1px 0 #f0e0e0;
 }
 a:link {
   color: royalblue;
@@ -21,7 +23,7 @@ a:visited {
   color: yellowgreen;
 }
 h3 {
-  color: darkslategray;
+  color: beige;
   padding-bottom: 10px;
   font-family: sans-serif;
   text-align: center;
@@ -40,6 +42,8 @@ h2 {
   color: royalblue;
   padding-bottom: 5px;
   font-family: sans-serif;
+  text-shadow: 1px 1px 0 #f0e0e0, -0.5px 0.5px 0 #f0e0e0,
+    -0.5px -0.5px 0 #f0e0e0, 0.5px -0.5px 0 #f0e0e0;
 }
 /* I chose these colors to match the aestehtic of broomstick.com */
 
@@ -52,7 +56,8 @@ ul {
 li {
   padding-bottom: 10px;
   margin-left: 30px;
-  list-style-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.redbubble.com%2Fi%2Fsticker%2FOld-Witch-Broomstick-by-CreativeDraws42%2F139399783.EJUG5&psig=AOvVaw3p6zr1iRFG3X-wjSVFAqNl&ust=1712900376067000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICc4re5uYUDFQAAAAAdAAAAABAE);
+  list-style-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rawpixel.com%2Fsearch%2Fcrumpled%2520paper&psig=AOvVaw22HLKYI0vHTgL9i8NocS5t&ust=1712901140886000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjt-5q8uYUDFQAAAAAdAAAAABAE);
+  /* The "dots" in the list are crumpled paper which also match elements from Broomstick.com */
 }
 h4 {
   padding-top: 10px;
@@ -62,7 +67,7 @@ p {
   padding: 10px;
 }
 body {
-  background-color: lightgrey;
-  color: darkslategray;
+  background-color: gray;
+  color: beige;
   margin: 30px 100px 30px;
 }
