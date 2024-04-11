@@ -37,6 +37,7 @@ h2 {
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 0.1pc;
+  text-align: center;
 }
 .different {
   color: royalblue;
@@ -79,6 +80,7 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
   gap: 20px;
 }
