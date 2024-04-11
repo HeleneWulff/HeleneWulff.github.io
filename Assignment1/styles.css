@@ -44,11 +44,11 @@ h2 {
   text-align: center;
 }
 .different {
-  color: rgb(67, 68, 69);
+  color: yellowgreen;
   padding-bottom: 5px;
   font-family: sans-serif;
-  text-shadow: 1px 1px 0 #cedebf, -0.5px 0.5px 0 #f0e0e0,
-    -0.5px -0.5px 0 #f0e0e0, 0.5px -0.5px 0 #f0e0e0;
+  text-shadow: 1px 1px 0 #505050, -0.5px 0.5px 0 #505050,
+    -0.5px -0.5px 0 #c0bebe, 0.5px -0.5px 0 #505050;
 }
 /* I chose these colors to match the aestehtic of broomstick.com */
 
@@ -62,6 +62,8 @@ li {
   padding-bottom: 10px;
   margin-left: 30px;
   list-style-type: circle;
+  text-shadow: 1px 1px 0 #8e8e8c, -0.5px 0.5px 0 #505050,
+    -0.5px -0.5px 0 #505050, 0.5px -0.5px 0 #8e8e8c;
 }
 h4 {
   padding-top: 10px;
@@ -69,14 +71,15 @@ h4 {
 p {
   line-height: 1.4;
   padding: 10px;
+  text-shadow: 1px 1px 0 #8e8e8c, -0.5px 0.5px 0 #505050,
+    -0.5px -0.5px 0 #505050, 0.5px -0.5px 0 #8e8e8c;
 }
 body {
   background-color: lightgrey;
   background-image: radial-gradient(
-    dimgrey,
-    lightgrey,
+    rgb(167, 166, 166),
     rgb(134, 172, 243),
-    yellowgreen
+    rgb(182, 212, 122)
   );
   color: beige;
   margin: 30px 100px 30px;
