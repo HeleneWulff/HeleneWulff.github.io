@@ -71,3 +71,14 @@ body {
   color: beige;
   margin: 30px 100px 30px;
 }
+.container > div {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: darkgray;
+  border: 2px cornflowerblue;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
