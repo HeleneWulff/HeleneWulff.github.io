@@ -7,12 +7,12 @@ h1 {
   font-weight: 800;
   font-family: sans-serif;
   text-align: center;
-  text-shadow: 1px 1px 0 #f0e0e0, -1px 1px 0 #f0e0e0, -1px -1px 0 #f0e0e0,
+  text-shadow: 1px 1px 0 #f0e0e0, -1px 1px 0 #f0e0e0, -1px -1px 0 #505050,
     1px -1px 0 #f0e0e0;
 }
 a:link {
   color: royalblue;
-  text-shadow: 2px 2px 0 #505050, -2px 2px 0 #505050, -2px -2px 0 #505050,
+  text-shadow: 2px 2px 0 #f0e0e0, -2px 2px 0 #505050, -2px -2px 0 #505050,
     2px -2px 0 #505050;
   letter-spacing: 0.1pc;
 }
@@ -23,27 +23,31 @@ a:visited {
   color: yellowgreen;
 }
 h3 {
-  color: beige;
+  color: lightgray;
   padding-bottom: 30px;
   font-family: sans-serif;
   text-align: center;
   font-weight: 500;
+  text-shadow: 1px 1px 0 #505050, -1px 1px 0 #505050, -1px -1px 0 #505050,
+    1px -1px 0 #505050;
 }
 h2 {
   color: yellowgreen;
-  text-shadow: 1px 1px 0 #505050, -1px 1px 0 #505050, -1px -1px 0 #505050,
+  text-shadow: 1px 1px 0 #8e8e8c, -1px 1px 0 #505050, -1px -1px 0 #2a64ab,
     1px -1px 0 #505050;
   padding-top: 30px;
+  padding-bottom: 10px;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1pc;
+  font-family: sans-serif;
   text-align: center;
 }
 .different {
-  color: royalblue;
+  color: rgb(67, 68, 69);
   padding-bottom: 5px;
   font-family: sans-serif;
-  text-shadow: 1px 1px 0 #f0e0e0, -0.5px 0.5px 0 #f0e0e0,
+  text-shadow: 1px 1px 0 #cedebf, -0.5px 0.5px 0 #f0e0e0,
     -0.5px -0.5px 0 #f0e0e0, 0.5px -0.5px 0 #f0e0e0;
 }
 /* I chose these colors to match the aestehtic of broomstick.com */
@@ -57,8 +61,7 @@ ul {
 li {
   padding-bottom: 10px;
   margin-left: 30px;
-  list-style-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rawpixel.com%2Fsearch%2Fcrumpled%2520paper&psig=AOvVaw22HLKYI0vHTgL9i8NocS5t&ust=1712901140886000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjt-5q8uYUDFQAAAAAdAAAAABAE);
-  /* The "dots" in the list are crumpled paper which also match elements from Broomstick.com */
+  list-style-type: circle;
 }
 h4 {
   padding-top: 10px;
@@ -69,12 +72,11 @@ p {
 }
 body {
   background-color: lightgrey;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(141, 178, 113),
-    lightblue,
+  background-image: radial-gradient(
+    dimgrey,
     lightgrey,
-    rgb(163, 193, 139)
+    rgb(134, 172, 243),
+    yellowgreen
   );
   color: beige;
   margin: 30px 100px 30px;
