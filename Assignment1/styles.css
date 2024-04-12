@@ -54,9 +54,6 @@ h2 {
 
 ul {
   list-style: none;
-
-  /* list-style-type: square;
-  list-style-position: inside; */
 }
 li {
   padding-bottom: 10px;
@@ -81,6 +78,9 @@ body {
     rgb(134, 172, 243),
     rgb(182, 212, 122)
   );
+  /* I chose the radial-gradient style for the circular look like our planet.
+  I also think the grey center can symbolize the place we should place the rubbish to not affect our planet. 
+  like an imaginary bin */
   color: beige;
   margin: 30px 100px 30px;
 }
@@ -90,6 +90,7 @@ body {
   background-color: cornflowerblue;
   border-color: yellowgreen;
 }
+/* Using grid to display the questions and answers to bring "equal" attention to each */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -97,3 +98,4 @@ body {
   gap: 20px;
   border-color: yellowgreen;
 }
+/* I have generally tried to keep the colour palette within shades of blue, green and grey to somewhat match Broomstick.com */
