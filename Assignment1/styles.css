@@ -12,6 +12,7 @@ h1 {
 }
 /* Using sans-serif for headlines and serif (times new roman) for paragraphs.
 Looks good together and the serif fond aligns with the paper reference */
+/* Using text-shadow everywhere to bring the page more to life */
 a:link {
   color: royalblue;
   text-shadow: 2px 2px 0 #f0e0e0, -2px 2px 0 #505050, -2px -2px 0 #505050,
