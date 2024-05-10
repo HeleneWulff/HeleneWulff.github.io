@@ -40,7 +40,7 @@ body {
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 750px;
+  gap: 50px;
   /* position: relative;
   margin-left: 0px;
   margin-right: 400px; */
@@ -94,13 +94,17 @@ nav a {
 
 /* Media player styling */
 .media-player {
-  width: 100%;
+  width: 805px;
+  height: 460px;
+  background-color: #000;
   margin: 0 auto;
   float: left;
 }
 
 .media-player video {
-  max-width: 700%;
+  width: 805px;
+  height: 460px;
+  background-color: #000;
   border: 3px solid #810c56;
   padding: 5px;
 }
@@ -111,7 +115,6 @@ nav a {
   align-items: center;
   gap: 1rem;
   margin-top: 10px;
-  width: 700%;
 }
 
 .custom-controls button {
@@ -147,6 +150,13 @@ nav a {
   gap: 1rem;
   /* width: 200px; */
   flex: 1;
+}
+
+.video-list button {
+  cursor: pointer;
+}
+.video-list button :hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* ul {

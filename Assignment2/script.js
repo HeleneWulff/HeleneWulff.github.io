@@ -1,4 +1,5 @@
 const video = document.querySelector("#custom-video-player");
+const videoSrc = video.getElementsByTagName("source")[0];
 const playPauseBtn = document.querySelector("#play-pause-btn");
 const playPauseImg = document.querySelector("#play-pause-img");
 const progressBar = document.querySelector("#progress-bar-fill");
@@ -23,11 +24,11 @@ function updateProgressBar() {
 const videoList = [
   {
     name: "video1",
-    link: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
+    link: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4",
   },
   {
     name: "video2",
-    link: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
+    link: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4",
   },
   {
     name: "video3",
@@ -46,39 +47,40 @@ const videoList = [
     link: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
   },
 ];
-
+function pickVideo(index) {
+  const video1 = videoList[index];
+  video.pause();
+  videoSrc.setAttribute("src", video1.link);
+  videoSrc.setAttribute("type", "video/mp4");
+  video.load();
+  video.play();
+}
 const firstVideoButton = document.querySelector("#first-video-btn");
 firstVideoButton.addEventListener("click", function playIt() {
-  video1.pause();
-  playVideo(0);
+  pickVideo(0);
 });
 
 const secondVideoButton = document.querySelector("#second-video-btn");
 secondVideoButton.addEventListener("click", function playIt() {
-  video2.pause();
-  playVideo(1);
+  pickVideo(1);
 });
 
 const thirdVideoButton = document.querySelector("#third-video-btn");
 thirdVideoButton.addEventListener("click", function playIt() {
-  video3.pause();
-  playVideo(2);
+  pickVideo(2);
 });
 
 const fourthVideoButton = document.querySelector("#fourth-video-btn");
 fourthVideoButton.addEventListener("click", function playIt() {
-  video4.pause();
-  playVideo(3);
+  pickVideo(3);
 });
 
 const fifthVideoButton = document.querySelector("#fifth-video-btn");
 fifthVideoButton.addEventListener("click", function playIt() {
-  video5.pause();
-  playVideo(4);
+  pickVideo(4);
 });
 
 const sixthVideoButton = document.querySelector("#sixth-video-btn");
 sixthVideoButton.addEventListener("click", function playIt() {
-  video5.pause();
-  playVideo(5);
+  pickVideo(5);
 });
