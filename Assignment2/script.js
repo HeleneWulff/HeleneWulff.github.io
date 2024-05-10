@@ -24,11 +24,11 @@ function updateProgressBar() {
 const videoList = [
   {
     name: "video1",
-    link: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4",
+    link: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
   },
   {
     name: "video2",
-    link: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4",
+    link: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
   },
   {
     name: "video3",
@@ -46,6 +46,10 @@ const videoList = [
     name: "video6",
     link: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
   },
+
+  //I am creating a function (pickVideo) that changes the video in the media player according to the video chosen from the video list.
+  //So if the user clicks on a video from the video list, that video will be shown on the "big screen" (media player).
+  //With reference to a layout like on YouTube, this function will hopefully encourage the user to not only view the current music video but also visit the artist's other musical works.
 ];
 function pickVideo(index) {
   const video1 = videoList[index];

@@ -158,6 +158,8 @@ nav a {
 .video-list button :hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+/* I am making the cursor a pointer when hovering over the videos in the video list to make it clear that these are clickable.
+Likewise I made a box shadow when hovering over the videos to further underline the possibility to click on them.
 
 /* ul {
   list-style: none;
