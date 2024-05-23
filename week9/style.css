@@ -72,10 +72,133 @@ input:hover {
   fill: blue;
 }
 
+.box {
+  background-color: purple;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animation-name: color-switch; */
+  animation-name: border-switch;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  border-width: 6px;
+}
+
+@keyframes color-switch {
+  0% {
+    background-color: purple;
+  }
+  20% {
+    background-color: coral;
+  }
+  0% {
+    background-color: cornflowerblue;
+  }
+  40% {
+    background-color: lightgreen;
+  }
+  60% {
+    background-color: blue;
+  }
+  80% {
+    background-color: gold;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+
+@keyframes border-switch {
+  0% {
+    border-color: purple;
+  }
+  20% {
+    border-color: coral;
+  }
+  0% {
+    border-color: cornflowerblue;
+  }
+  40% {
+    border-color: lightgreen;
+  }
+  60% {
+    border-color: blue;
+  }
+  80% {
+    border-color: gold;
+  }
+  100% {
+    border-color: purple;
+  }
+}
+
 .duck-icon {
-  transition: scale 0.5s ease;
+  /* transition: scale 0.5s ease; */
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .duck-icon:hover {
   scale: 1.2;
+}
+
+@keyframes bounce {
+  0% {
+    translate: 0px 0px;
+  }
+  50% {
+    translate: 0px -40px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+.spinner {
+  width: 120px;
+  height: 120px;
+  /* background-color: cornsilk; */
+  border: 6px solid cornsilk;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border-radius: 10px;
+}
+
+@keyframes loading {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.heart-icon {
+  animation: heartbeat 4s 1;
+}
+
+@keyframes heartbeat {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.7;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+#side-drawer {
+  position: fixed;
+  width: 200px;
+  background-color: cadetblue;
+  height: 10vh;
+  top: 0;
+  /* left: -200px; */
 }
