@@ -15,12 +15,48 @@ function togglePlayPause() {
     playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
   }
 }
+
+//The first part is the play/pause button and the next part is for the mute button.
+// This part of the code allows us to mute or unmute a video.
+const muteUnmuteButton = document.querySelector("#mute-unmute-button");
+console.log(muteUnmuteButton);
+
+muteUnmuteButton.addEventListener("click", toggleSound);
+
+function toggleSound() {
+  if (video.muted) {
+    muteUnmuteButton.style.backgroundColor = "#dd88bd";
+    video.muted = false;
+  } else {
+    muteUnmuteButton.style.backgroundColor = "#401e33";
+    video.muted = true;
+  }
+}
+
+//The following code makes it possible to see the progress in the progress bar.
 function updateProgressBar() {
   const value = (video.currentTime / video.duration) * 100;
   progressBar.style.width = value + "%";
 }
 
-// Creating an object array containing the videos
+//The following code allows us to make the video full screen.
+video.addEventListener("dblclick", goFullscreen);
+
+const fullscreenButton = document.querySelector("#fullscreen-button");
+console.log(fullscreenButton);
+
+fullscreenButton.addEventListener("click", goFullscreen);
+
+function goFullscreen() {
+  if (!document.fullscreenElement) {
+    video.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
+
+// In the following I am focusing on the video list of my page.
+// First I am creating an object array containing the videos.
 const videoList = [
   {
     name: "video1",
@@ -46,11 +82,11 @@ const videoList = [
     name: "video6",
     link: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
   },
-
-  //I am creating a function (pickVideo) that changes the video in the media player according to the video chosen from the video list.
-  //So if the user clicks on a video from the video list, that video will be shown on the "big screen" (media player).
-  //With reference to a layout like on YouTube, this function will hopefully encourage the user to not only view the current music video but also visit the artist's other musical works.
 ];
+
+//Next, I am creating a function (pickVideo) that changes the video in the media player according to the video chosen from the video list.
+//So if the user clicks on a video from the video list, that video will be shown on the "big screen" (media player).
+//With reference to a layout like on YouTube, this function will hopefully encourage the user to not only view the current music video but also visit the artist's other musical works.
 function pickVideo(index) {
   const video1 = videoList[index];
   video.pause();

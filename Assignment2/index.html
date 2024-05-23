@@ -1,3 +1,10 @@
+<!-- I have chosen the context of "Music Video"
+and in the following I will highlight my three main goals for the site:
+
+1. I want to make the music video the main focus on the site.
+2. I want to make a list next to the music video containing other videos by the same artist.
+3. I want to make a timeline of the artist's career underneath.  -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,13 +28,12 @@
     <!-- Navigation Section -->
     <!-- I have changed the names in the navigation section (side bar) to be more related to the music video context. -->
     <!-- I have also made it a side bar instead - again with reference to YouTube. -->
-    <!-- more -->
     <nav>
       <section id="side-bar">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Related Videos</a></li>
-        <li><a href="#">Lyrics</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Timeline</a></li>
         <li><a href="#">The Artist</a></li>
       </ul>
     </section>
@@ -43,8 +49,10 @@
             type="video/mp4"
           />
           Your browser does not support the video tag.
+          <!-- Added this in case someone is using an old browser. -->
         </video>
         <div class="custom-controls">
+          <!-- Play/pause button -->
           <button id="play-pause-btn" onclick="togglePlayPause()">
             <img
               id="play-pause-img"
@@ -53,106 +61,91 @@
               width="24"
               height="24"
             />
+            <!-- Mute button -->
+            <button id="mute-unmute-button">
+              <img
+                id="mute-unmute-img"
+                src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+                alt="Mute unmute Button"
+                width="24"
+                height="24"
+              />
           </button>
-          <!-- add the missing buttons or functionality here -->
+          <!-- Progress bar -->
           <div class="progress-bar">
             <span id="progress-bar-fill"></span>
           </div>
+          <!-- Full-screen button -->
+          <button id="fullscreen-button">
+            <img
+              id="fullscreen-img"
+              src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
+              alt="Fullscreen Button"
+              width="24"
+              height="24"
+            />
         </div>
       </div>
       <!-- I am creating a video list with other videos by the same artist. Here it is just the same video thoughout the list, but it shows the concept. -->
+      <!-- To show that the idea is that the list should consist of different videos, I have given each video a different thumbnail. I chose purple musical instruments to match the aesthetic of the site. -->
       <section class="video-list">
         <button id="first-video-btn"> 
-          <video> <source
+          <video controls poster="guitar.png"> 
+            <!-- I found this image on https://www.deviantart.com/theamazingwiggles/art/Cartoon-Guitar-Purple-2008-896680381-->
+            <source
           src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
           type="video/mp4" alt="video1"/>
         </video>
-          <!-- <img id="first-video-img"> -->
         </button>
         <button id="second-video-btn">
-          <video> <source
+          <video controls poster="drums.webp"> 
+            <!-- I found this image on https://www.vectorstock.com/royalty-free-vector/isolated-drumset-in-purple-color-vector-29224473-->
+            <source
             src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
             type="video/mp4" alt="video2"/>
           </video>
-          <!-- <img id="second-video-img"/> -->
         </button>
         <button id="third-video-btn"> 
-          <video> <source
+          <video controls poster="trumpet.png"> 
+            <!-- I found this image on https://pixabay.com/vectors/trumpet-instrument-music-purple-310389/-->
+            <source
           src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
           type="video/mp4" alt="video3"/>
         </video>
-          <!-- <img id="third-video-img"> -->
         </button>
         <button id="fourth-video-btn"> 
-          <video> <source
+          <video controls poster="piano.jpeg"> 
+            <!-- I found this image on https://dk.pinterest.com/pin/694328467568419533/-->
+            <source
           src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
           type="video/mp4" alt="video4"/>
         </video>
-          <!-- <img id="fourth-video-img"> -->
         </button>
         <button id="fifth-video-btn"> 
-          <video> <source
+          <video controls poster="harp.webp"> 
+            <!-- I found this image on https://www.dreamstime.com/harp-watercolor-illustration-maroon-burgundy-claret-vinous-purple-hand-drawn-classical-music-instrument-harp-watercolor-image113379403-->
+            <source
           src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
           type="video/mp4" alt="video5"/>
         </video>
-          <!-- <img id="fifth-video-img"> -->
         </button>
         <button id="sixth-video-btn"> 
-          <video> <source
+          <video controls poster="violin.png"> 
+              <!-- I found this image on https://www.clker.com/clipart-purple-violin.html-->
+            <source
           src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
           type="video/mp4" alt="video6"/>
         </video>
-          <!-- <img id="sixth-video-img"> -->
         </button>
       </section>
     </section>
-      <!-- <ul>
-        <li>
-          <video id="custom-video-player" controls>
-            <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
-            type="video/mp4"/>
-          </video>
-        </li>
-        <li><video id="custom-video-player" controls>
-          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
-          type="video/mp4"/>
-        </video>
-      </li>
-        <li><video id="custom-video-player" controls>
-          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
-          type="video/mp4"/>
-        </video>
-      </li>
-        <li>
-          <video id="custom-video-player" controls>
-            <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
-            type="video/mp4"/>
-          </video>
-        </li>
-        <li>
-          <video id="custom-video-player" controls>
-            <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
-            type="video/mp4"/>
-          </video>
-        </li>
-        <li>
-          <video id="custom-video-player" controls>
-            <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
-            type="video/mp4"/>
-          </video>
-        </li>
-      </ul> -->
     </main>
 
-<!-- <section class="column">
-  <div class="videos">
-    <video id="suggestions" controls>
-      <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
-      type="video/mp4"/>
-    </video>
-  </div>  
-</section> -->
-
+<!-- I am creating a timeline that shows the artist's career. I have made this because I thought it would be suitable for a site dedicated to a specific artist on the occasion of their new music video release.-->
+<!-- In each paragraph I have written a few words that are indicating what the idea is. Afterwords I have just written "paragraph" multiple times as this is to show the concept. -->
+<!-- This code is inspired by the tutorial on https://www.w3schools.com/howto/howto_css_timeline.asp. I have used elements of this tutorial but also changed several areas to make it fit my vision. -->
+<!-- I have used elements of this tutorial because the foundation for this timeline was exactly what I had in mind for my site. -->
+<!-- I am giving classes "left" and "right" so that I can style them in the CSS sheet. -->
 <section class="timeline">
   <div class="left">
     <div class="content">
@@ -193,11 +186,16 @@
 </section>
 
     <!-- Footer Section -->
+    <!-- Reference to all the button icons I have used -->
     <footer>
       <p>&copy; 2024 Media Player Website. All rights reserved.</p>
       <a href="https://icons8.com/icon/59862/play">Play</a> icon by
       <a href="https://icons8.com">Icons8</a>
       <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/91635/no-audio">Mute</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/69155/full-screen">Full-screen</a> icon by
       <a href="https://icons8.com">Icons8</a>
     </footer>
   </body>
