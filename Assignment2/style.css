@@ -224,7 +224,7 @@ Likewise I made a box shadow when hovering over the videos and incoporated a sca
 }
 
 /* The other colour on the timeline (on the pink line) */
-/* I am making the height match the height of the boxes and the purple colour choise is to match the aesthetic on the site. */
+/* I am making the height somewhat match the height of the boxes and the purple colour choise is to match the aesthetic on the site. */
 .left::after {
   content: "";
   position: absolute;
