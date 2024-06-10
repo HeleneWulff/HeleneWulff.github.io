@@ -1,0 +1,76 @@
+body {
+  background-image: linear-gradient(
+    rgb(255, 189, 222),
+    rgb(255, 221, 245),
+    rgb(255, 183, 225)
+  );
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header styling */
+header {
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  position: absolute;
+}
+
+/* Navigation styling */
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+/* Styling the price summary box */
+.container {
+  background-color: white;
+  width: 400px;
+  min-height: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner {
+  padding: 10px;
+  z-index: 1;
+  /* position: absolute;
+  bottom: 0; */
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+/* Styling the checkout button */
+button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: palevioletred;
+}
+
+button:hover {
+  background-color: rgb(147, 75, 99);
+  transition: scale 0.3s ease background-color 0.3s ease;
+}
