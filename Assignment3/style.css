@@ -1,8 +1,9 @@
+/* Body styling */
 body {
   background-image: linear-gradient(
-    rgb(255, 189, 222),
+    rgb(252, 206, 229),
     rgb(255, 221, 245),
-    rgb(255, 183, 225)
+    rgb(255, 226, 243)
   );
   display: flex;
   flex-direction: column;
@@ -11,6 +12,13 @@ body {
   max-width: 1000px;
   justify-content: center;
   align-items: center;
+  font-family: DM Serif Display;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Header styling */
@@ -21,6 +29,10 @@ header {
   background-color: white;
   top: 0;
   position: absolute;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 /* Navigation styling */
@@ -60,6 +72,21 @@ nav ul li {
 h2 {
   font-size: 2rem;
   text-align: left;
+  padding-bottom: 50px;
+}
+
+p {
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+span.price {
+  float: right;
+}
+
+h4 {
+  text-align: left;
+  font-size: 1.5rem;
 }
 
 /* Styling the checkout button */
@@ -68,6 +95,7 @@ button {
   cursor: pointer;
   border: none;
   background-color: palevioletred;
+  z-index: 1;
 }
 
 button:hover {
