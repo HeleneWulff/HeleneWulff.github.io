@@ -96,6 +96,7 @@ button {
   border: none;
   background-color: palevioletred;
   border-radius: 10px;
+  width: 350px;
 }
 
 button:hover {
