@@ -31,8 +31,52 @@
     <div class="container">
       <h2>DETAILS</h2>
       <p>E-mail</p>
+      <input type="email" name="e-mail" id="e-mail" />
       <p>Address</p>
+      <form action="address">
+        <input
+          type="text"
+          name="address1"
+          id="address1"
+          placeholder="Address line 1"
+        />
+        <input
+          type="text"
+          name="address2"
+          id="address2"
+          placeholder="Address line 2"
+        />
+      </form>
       <p>Payment</p>
+      <form action="payment">
+        <input
+          type="text"
+          name="cardholder"
+          id="cardholder"
+          placeholder="Card Holder"
+        />
+        <input
+          type="number"
+          name="cardnumber"
+          id="cardnumber"
+          placeholder="Card Number"
+        />
+        <input
+          type="date"
+          name="expirydate"
+          id="expirydate"
+          placeholder="Expiry Date"
+        />
+        <input
+          type="number"
+          name="securitycode"
+          id="securitycode"
+          placeholder="Security Code"
+        />
+      </form>
+      <div class="inner" id="continue">
+        <button id="continue">CONTINUE</button>
+      </div>
     </div>
   </body>
 </html>

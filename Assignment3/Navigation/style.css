@@ -50,11 +50,11 @@ nav ul li {
   margin-right: 20px;
 }
 
-/* Styling the price summary box */
+/* Styling the details box */
 .container {
   background-color: white;
-  width: 400px;
-  min-height: 400px;
+  width: 500px;
+  min-height: 500px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -69,5 +69,47 @@ h2 {
 
 p {
   text-align: left;
-  padding-bottom: 40px;
+  padding: 10px;
+}
+
+#e-mail {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#address1,
+#address2 {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Payment form */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  gap: 20px;
+}
+
+#cardholder,
+#cardnumber,
+#expirydate,
+#securitycode {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: palevioletred;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(147, 75, 99);
+  transition: scale 0.3s ease background-color 0.3s ease;
 }

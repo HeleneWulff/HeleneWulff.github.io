@@ -95,7 +95,7 @@ button {
   cursor: pointer;
   border: none;
   background-color: palevioletred;
-  z-index: 1;
+  border-radius: 10px;
 }
 
 button:hover {
