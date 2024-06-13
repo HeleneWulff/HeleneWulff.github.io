@@ -64,17 +64,19 @@ nav ul li {
 h2 {
   font-size: 2rem;
   text-align: left;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 p {
   text-align: left;
   padding: 10px;
+  font-size: 1.5rem;
 }
 
 #e-mail {
   padding: 10px;
   border-radius: 10px;
+  width: 460px;
 }
 
 #address1,
