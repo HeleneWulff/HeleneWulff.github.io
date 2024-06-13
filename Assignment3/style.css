@@ -15,6 +15,11 @@ body {
   font-family: DM Serif Display;
 }
 
+/* I generel I am keeping the design simple and using pink/rose colours. */
+/* When I have looked at other shopping websites with the similar inactivity as the one I am making, they all have a colour scheme they use throughout the pages. */
+/* The examples I looked at did not use thep pink/rose colours so therefore I chose to go with this aesthetic. */
+/* This of course also applies to the details page. */
+
 .dm-serif-display-regular {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
@@ -33,6 +38,8 @@ header {
 
 h1 {
   font-size: 2rem;
+  font-weight: 800;
+  color: palevioletred;
 }
 
 /* Navigation styling */
@@ -64,7 +71,7 @@ nav ul li {
 
 .inner {
   padding: 10px;
-  z-index: 1;
+  /* z-index: 1; */
   /* position: absolute;
   bottom: 0; */
 }
@@ -97,7 +104,14 @@ button {
   background-color: palevioletred;
   border-radius: 10px;
   width: 350px;
+  color: white;
 }
+
+/* In this context it is important for the shopping site to get the customer to actually buy the items they have added to their bag.*/
+/* Therefore, the checkout button should be big in size and be in a colour that stands out from the rest. */
+/* The hover effect is also important for the context because it underlines that this is something you can click on. */
+/* The same applies for the fact that the cursor is a pointer --> again something that emphasizes the clicking action. */
+/* I have made the colour of the "PROCEED TO CHECKOUT" text white because I think it makes it stand out more. Especially when hovering over the button and it turns a darker shade.*/
 
 button:hover {
   background-color: rgb(147, 75, 99);
