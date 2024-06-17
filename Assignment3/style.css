@@ -17,7 +17,7 @@ body {
 
 /* I generel I am keeping the design simple and using pink/rose colours. */
 /* When I have looked at other shopping websites with the similar inactivity as the one I am making, they all have a colour scheme they use throughout the pages. */
-/* The examples I looked at did not use thep pink/rose colours so therefore I chose to go with this aesthetic. */
+/* The examples I looked at did not use the pink/rose colours so therefore I chose to go with this aesthetic. */
 /* This of course also applies to the details page. */
 
 .dm-serif-display-regular {
@@ -58,6 +58,8 @@ nav ul li {
   margin-right: 20px;
 }
 
+/* I chose to make the navigation area in the header to create a recognizable shopping site layout.*/
+
 /* Styling the price summary box */
 .container {
   background-color: white;
@@ -91,6 +93,9 @@ span.price {
   float: right;
 }
 
+/* I chose to make the text be on the left and the price float right as this is something I often see in similar checkout boxes like the one I have created.*/
+/* Again this is to create a recognizable layout of a shopping site.*/
+
 h4 {
   text-align: left;
   font-size: 1.5rem;
@@ -117,3 +122,6 @@ button:hover {
   background-color: rgb(147, 75, 99);
   transition: scale 0.3s ease background-color 0.3s ease;
 }
+
+/* My design choise are made with clear reference to the visual mockup I created and presented earlier in the course. */
+/* The visual planning has been very helpful in the actual design process. */
