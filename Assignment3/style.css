@@ -15,7 +15,7 @@ body {
   font-family: DM Serif Display;
 }
 
-/* I generel I am keeping the design simple and using pink/rose colours. */
+/* In general I am keeping the design simple and using pink/rose colours. */
 /* When I have looked at other shopping websites with the similar inactivity as the one I am making, they all have a colour scheme they use throughout the pages. */
 /* The examples I looked at did not use the pink/rose colours so therefore I chose to go with this aesthetic. */
 /* This of course also applies to the details page. */
@@ -93,7 +93,7 @@ span.price {
   float: right;
 }
 
-/* I chose to make the text be on the left and the price float right as this is something I often see in similar checkout boxes like the one I have created.*/
+/* I chose to make the text be on the left and the price float right as this is something I often see in other checkout boxes similar to the one I have created.*/
 /* Again this is to create a recognizable layout of a shopping site.*/
 
 h4 {
@@ -123,5 +123,5 @@ button:hover {
   transition: scale 0.3s ease background-color 0.3s ease;
 }
 
-/* My design choise are made with clear reference to the visual mockup I created and presented earlier in the course. */
+/* My design choises are made with clear reference to the visual mockup I created and presented earlier in the course. */
 /* The visual planning has been very helpful in the actual design process. */
